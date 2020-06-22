@@ -35,7 +35,7 @@ function __sdkman_add_to_path {
 
 	present=$(__sdkman_path_contains "$candidate")
 	if [[ "$present" == 'false' ]]; then
-		PATH="$SDKMAN_CANDIDATES_DIR/$candidate/current/bin:$PATH"
+		PATH="$PATH:$SDKMAN_CANDIDATES_DIR/$candidate/current/bin"
 	fi
 }
 
@@ -70,7 +70,7 @@ function __sdkman_prepend_candidate_to_path {
 
 	candidate_dir="$1"
 	candidate_bin_dir=$(__sdkman_determine_candidate_bin_dir "$candidate_dir")
-	echo "$PATH" | grep -q "$candidate_dir" || PATH="${candidate_bin_dir}:${PATH}"
+	echo "$PATH" | grep -q "$candidate_dir" || PATH="${PATH}:${candidate_bin_dir}"
 	unset CANDIDATE_BIN_DIR
 }
 
