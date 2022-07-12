@@ -1,8 +1,6 @@
 # SDKMAN! CLI
 ### The Software Development Kit Manager Command Line Interface
 
-[![Build Status](https://travis-ci.org/sdkman/sdkman-cli.svg?branch=master)](https://travis-ci.org/sdkman/sdkman-cli)
-[![Latest Version](https://api.bintray.com/packages/sdkman/generic/sdkman-cli/images/download.svg) ](https://bintray.com/sdkman/generic/sdkman-cli/_latestVersion)
 [![Backers on Open Collective](https://opencollective.com/sdkman/backers/badge.svg)](#backers) 
 [![Sponsors on Open Collective](https://opencollective.com/sdkman/sponsors/badge.svg)](#sponsors)
 [![Slack](https://slack.sdkman.io/badge.svg)](https://slack.sdkman.io)
@@ -21,7 +19,7 @@ If the environment needs tweaking for SDKMAN to be installed, the installer will
 
 ## Running the Cucumber Features
 
-All SDKMAN's BDD tests describing the CLI behaviour are written in Cucumber and can be found under `src/test/cucumber/sdkman`. These can be run with Gradle by running the following command:
+All SDKMAN's BDD tests describing the CLI behaviour are written in Cucumber and can be found under `src/test/resources/features`. These can be run with Gradle by running the following command:
 
     $ ./gradlew test
 
@@ -79,5 +77,3 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/sdkman/sponsor/7/website" target="_blank"><img src="https://opencollective.com/sdkman/sponsor/7/avatar.svg"></a>
 <a href="https://opencollective.com/sdkman/sponsor/8/website" target="_blank"><img src="https://opencollective.com/sdkman/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/sdkman/sponsor/9/website" target="_blank"><img src="https://opencollective.com/sdkman/sponsor/9/avatar.svg"></a>
-
-
