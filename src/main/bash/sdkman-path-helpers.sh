@@ -85,5 +85,6 @@ function __sdkman_link_candidate_version() {
 		rm -rf "${SDKMAN_CANDIDATES_DIR}/${candidate}/current"
 	fi
 
-	ln -s "${version}" "${SDKMAN_CANDIDATES_DIR}/${candidate}/current"
+	#ln -s "${version}" "${SDKMAN_CANDIDATES_DIR}/${candidate}/current"
+	ln -s "${SDKMAN_CANDIDATES_DIR}/${candidate}/${version}" "${SDKMAN_CANDIDATES_DIR}/${candidate}/current"
 }
